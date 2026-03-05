@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UX Prototypes — Lochting</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f7fc; color: #200845; min-height: 100vh; }
+  .container { max-width: 720px; margin: 0 auto; padding: 64px 24px; }
+  h1 { font-size: 32px; font-weight: 600; margin-bottom: 8px; }
+  .subtitle { font-size: 16px; color: rgba(8, 5, 36, 0.75); margin-bottom: 48px; }
+  .prototype-list { display: flex; flex-direction: column; gap: 12px; }
+  .prototype-card {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 20px 24px; background: #fcfcff; border: 1px solid #ebebf1;
+    border-radius: 12px; text-decoration: none; color: #200845;
+    transition: all 0.15s;
+  }
+  .prototype-card:hover { border-color: #8a54dd; box-shadow: 0 2px 8px rgba(31, 26, 69, 0.08); }
+  .card-info { display: flex; flex-direction: column; gap: 4px; }
+  .card-title { font-size: 16px; font-weight: 500; }
+  .card-desc { font-size: 14px; color: rgba(8, 5, 36, 0.55); }
+  .card-arrow { font-size: 20px; color: rgba(8, 5, 36, 0.35); }
+  .prototype-card:hover .card-arrow { color: #8a54dd; }
+  .footer { margin-top: 64px; font-size: 13px; color: rgba(8, 5, 36, 0.45); }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>UX Prototypes</h1>
+  <p class="subtitle">Interactive prototypes for testing and review.</p>
+  <div class="prototype-list">
+    <a href="./notifications/" class="prototype-card">
+      <div class="card-info">
+        <span class="card-title">Notifications</span>
+        <span class="card-desc">Notification list, detail panel, tabs, search, and pagination</span>
+      </div>
+      <span class="card-arrow">&rarr;</span>
+    </a>
+  </div>
+  <p class="footer">Lochting &mdash; UX Prototypes</p>
+</div>
+</body>
+</html>
